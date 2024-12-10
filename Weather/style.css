@@ -1,0 +1,29 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#city-input{
+    border: none;
+    border-radius: 20px;
+    height: 5vh;
+    background-color:none;
+}
+
+#search-button{
+    border: none;
+    border-radius: 12px;
+    height: 5vh;
+    background: rgb(58,166,172);
+    background: linear-gradient(8deg, rgb(70, 188, 194) 0%, rgba(130, 255, 251, 0.883) 50%, rgba(255,255,255,1) 100%);
+    color:black;
+}
+
+#card{
+    border: none;
+    border-radius:20px;
+    box-shadow: -3px -3px 8px gray;
+    background: rgb(58,166,172);
+    background: linear-gradient(8deg, rgb(70, 188, 194) 0%, rgba(130, 255, 251, 0.883) 50%, rgba(255,255,255,1) 100%);
+}
+#card:hover{
+    transform: scale(1.1);
+}
