@@ -1,29 +1,107 @@
-*{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#city-input{
-    border: none;
-    border-radius: 20px;
-    height: 5vh;
-    background-color:none;
+
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-#search-button{
-    border: none;
-    border-radius: 12px;
-    height: 5vh;
-    background: rgb(58,166,172);
-    background: linear-gradient(8deg, rgb(70, 188, 194) 0%, rgba(130, 255, 251, 0.883) 50%, rgba(255,255,255,1) 100%);
-    color:black;
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#card{
-    border: none;
-    border-radius:20px;
-    box-shadow: -3px -3px 8px gray;
-    background: rgb(58,166,172);
-    background: linear-gradient(8deg, rgb(70, 188, 194) 0%, rgba(130, 255, 251, 0.883) 50%, rgba(255,255,255,1) 100%);
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-#card:hover{
-    transform: scale(1.1);
+
+h1 {
+    color: #006064;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    border: 2px solid #00796b;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+    outline: none;
+    font-size: 1rem;
+}
+
+#search-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: #00acc1;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#search-button:hover {
+    background: #00796b;
+}
+
+#cardSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.weather-card {
+    background: #e0f7fa;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s;
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+}
+
+.weather-card h2 {
+    color: #006064;
+    margin-bottom: 10px;
+}
+
+.weather-card img {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-card p {
+    color: #004d40;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    #city-input {
+        width: 90%;
+    }
+
+    .weather-card {
+        max-width: 100%;
+    }
 }
